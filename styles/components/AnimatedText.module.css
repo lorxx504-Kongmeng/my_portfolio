@@ -1,21 +1,17 @@
-.text-animation-enter {
-    opacity: 0;
-    transform: translateX(-50%);
+.typewriter {
+  overflow: hidden; /* Hide overflow to create typewriter effect */
+  border-right: 0.15em solid orange; /* Vertical blinking cursor effect */
+  white-space: nowrap; /* Prevent line breaks */
+  margin: 0;
+  padding: 0;
+  animation: typewriter 1s steps(28) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
   }
-  
-  .text-animation-enter-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: opacity 500ms, transform 500ms;
+  to {
+    width: 100%;
   }
-  
-  .text-animation-exit {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-  
-  .text-animation-exit-active {
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: opacity 500ms, transform 500ms;
-  }
+}

@@ -1,20 +1,24 @@
-import Image from 'next/image'
+import TypeWriter from '@/components/TypeWriter'
+
 
 export default function Home() {
-  return (
-    <main>
-      <section className='h-screen' >
-        <div className='text-8xl flex items-center justify-center min-h-[60%]'> 
-          <div className='flex'>
-            <h1 >Kongmeng</h1>
-            <h1 className='ml-4 font-bold'>Lor</h1>
-          </div>
-          <div>
 
+
+  return (
+    <main className='flex-wrap'>
+      <section className='h-screen' >
+          <div className='flex items-center justify-center min-h-[50%]'>
+            <TypeWriter />
           </div>
-        </div>
       </section>
-      <section className='h-screen'>Projects</section>
+      <section className='h-screen'>
+        <h1>About Section</h1>
+      </section>
+      <section className='h-screen'>
+       <h1>Projects</h1> 
+       
+      
+      </section>
       <section className='h-screen'>Contact</section>
     </main>
   )
