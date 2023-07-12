@@ -1,0 +1,21 @@
+.text-animation-enter {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  
+  .text-animation-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .text-animation-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  .text-animation-exit-active {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 500ms, transform 500ms;
+  }
