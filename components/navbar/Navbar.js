@@ -16,23 +16,18 @@ const Navbar = () => {
         setNav(!nav);
     }
 
-    const browserWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const browserHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-    console.log('Browser Width:', browserWidth);
-    console.log('Browser Height:', browserHeight);
-
     return (
         <nav className="m-16">
             <div className="flex justify-between shadow-xl">
                 <span>
-                    <Link href="/"><h1 className="text-2xl hover:font-bold">developedbyKongmengLor</h1></Link>
+                    <Link href="/"><h1 className="text-xl hover:font-bold">developedbyKongmengLor</h1></Link>
                 </span>
                 <div className="hidden md:flex">
                     <div className="flex">
-                        <Link href="/about" className="ml-6 text-2xl hover:font-bold">About</Link>
-                        <Link href="/projects" className="ml-6 text-2xl hover:font-bold">Project</Link>
-                        <Link href="/contact" className="ml-6 text-2xl hover:font-bold">Contact</Link>
+                        <Link href="/about" className="ml-6 text-xl hover:font-bold">About</Link>
+                        <Link href="/projects" className="ml-6 text-xl hover:font-bold">Project</Link>
+                        <Link href="/contact" className="ml-6 text-xl hover:font-bold">Contact</Link>
+
                     </div>
                 </div>
                 <div onClick={handleNav} className="md:hidden ml-[40%]">

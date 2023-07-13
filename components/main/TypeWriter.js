@@ -24,7 +24,7 @@ const TypeWriter = () => {
 
     return (
         
-        <div className='w-full h-[51rem] text-center'>
+        <div className='w-full h-[60rem] text-center shadow-xl'>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
                     <h1 className='text-6xl font-medium text-slate-700'>{firstNameTypeWriter}</h1>
@@ -33,10 +33,10 @@ const TypeWriter = () => {
                         <p className='text-3xl m-1 text-slate-650'>{position}</p>
                     </div>
                     <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
-                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-90">
+                     <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90">
                                 <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin/></Link>
                             </div>
-                        <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-90 ml-4">
+                        <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90 ml-4">
                                 <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'>
                                     <FaGithub />
                                 </Link>
