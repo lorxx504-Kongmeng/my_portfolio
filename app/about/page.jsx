@@ -4,15 +4,15 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className="w-full p-2 flex items-center py-20">
+    <div className="w-full p-2 flex items-center py-20 bg-gray-800 text-white">
 
         <div className="max-w-[1000px] m-auto md:grid grid-cols-2 gap-10 ">
           <div className="col-span-2 flex justify-between">
             <div className='flex-wrap'>
               <h1 className="text-xl">About</h1>
-              <h2 className="text-6xl">Who I Am.</h2>
-              <p>I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
-              <p></p>
+              <h2 className="text-6xl mt-2">Who I Am.</h2>
+              <p className='mt-2 font-light'>I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
+            
 
               {/* <div>
                 <h1 className='text-5xl font-bold  mt-10 shadow-lg'>SKILLS</h1>

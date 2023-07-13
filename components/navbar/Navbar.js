@@ -1,15 +1,12 @@
 "use client"
 import Link from "next/link"
-import { useRouter } from 'next/navigation';
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useState } from "react";
-import SocialmediaIcons from "../main/SocialmediaIcons";
 
 
 
 const Navbar = () => {
-    const router = useRouter();
     const [nav,setNav] = useState(false);
 
     const handleNav = () => {
@@ -24,7 +21,8 @@ const Navbar = () => {
                 </span>
                 <div className="hidden md:flex">
                     <div className="flex">
-                        <Link href="/about" className="ml-6 text-2xl hover:font-bold uppercase">About</Link>
+                        {/* <Link href="/about" className="ml-6 text-2xl hover:font-bold uppercase">About</Link> */}
+                        <Link href="/experiences" className="ml-6 text-2xl hover:font-bold uppercase">Experiences</Link>
                         <Link href="/projects" className="ml-6 text-2xl hover:font-bold uppercase">Project</Link>
                         <Link href="/contact" className="ml-6 text-2xl hover:font-bold uppercase">Contact</Link>
 
@@ -46,7 +44,8 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <Link href="/about" className="py-2 text-2xl hover:font-bold"> About</Link>
+                            {/* <Link href="/about" className="py-2 text-2xl hover:font-bold"> About</Link> */}
+                            <Link href="/experiences" className="py-2 text-2xl hover:font-bold">Experiences</Link>
                             <Link href="/projects" className="py-2 text-2xl hover:font-bold ">Project</Link>
                             <Link href="/contact" className="py-2 text-2xl hover:font-bold">Contact</Link>
                         </div>
