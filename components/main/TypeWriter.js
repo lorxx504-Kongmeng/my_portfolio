@@ -35,7 +35,6 @@ const TypeWriter = () => {
                     <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
                      <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-90">
                                 <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin/></Link>
-                                
                             </div>
                         <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-90 ml-4">
                                 <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'>
