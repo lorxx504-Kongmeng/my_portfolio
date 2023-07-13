@@ -24,9 +24,9 @@ const Navbar = () => {
                 </span>
                 <div className="hidden md:flex">
                     <div className="flex">
-                        <Link href="/about" className="ml-6 text-xl hover:font-bold">About</Link>
-                        <Link href="/projects" className="ml-6 text-xl hover:font-bold">Project</Link>
-                        <Link href="/contact" className="ml-6 text-xl hover:font-bold">Contact</Link>
+                        <Link href="/about" className="ml-6 text-2xl hover:font-bold uppercase">About</Link>
+                        <Link href="/projects" className="ml-6 text-2xl hover:font-bold uppercase">Project</Link>
+                        <Link href="/contact" className="ml-6 text-2xl hover:font-bold uppercase">Contact</Link>
 
                     </div>
                 </div>
@@ -46,8 +46,8 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <Link href="/about" className="py-2 text-2xl hover:font-bold">About</Link>
-                            <Link href="/projects" className="py-2 text-2xl hover:font-bold">Project</Link>
+                            <Link href="/about" className="py-2 text-2xl hover:font-bold"> About</Link>
+                            <Link href="/projects" className="py-2 text-2xl hover:font-bold ">Project</Link>
                             <Link href="/contact" className="py-2 text-2xl hover:font-bold">Contact</Link>
                         </div>
                         <div>

@@ -24,7 +24,7 @@ const TypeWriter = () => {
 
     return (
         
-        <div className='w-full h-[60rem] text-center shadow-xl'>
+        <div className='w-full h-[60rem] text-center'>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
                     <h1 className='text-6xl font-medium text-slate-700'>{firstNameTypeWriter}</h1>

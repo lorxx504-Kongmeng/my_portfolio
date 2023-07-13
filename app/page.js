@@ -2,6 +2,7 @@ import TypeWriter from "@/components/main/TypeWriter"
 import About from "./about/page"
 import Projects from "./projects/page"
 import Contact from "./contact/page"
+import Experiences from "./experiences/page"
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <TypeWriter />
       <About />
+      <Experiences />
       <Projects />
       <Contact />
 
