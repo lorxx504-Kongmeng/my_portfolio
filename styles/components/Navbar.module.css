@@ -1,0 +1,9 @@
+.myComponentContainer {
+    /* Your default padding and margin styles here */
+  }
+  
+  @media screen and (max-width: 384px) {
+    .myComponentContainer {
+      /* Adjusted padding and margin styles for small viewport sizes */
+    }
+  }

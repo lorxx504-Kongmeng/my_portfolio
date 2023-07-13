@@ -1,25 +1,30 @@
-import TypeWriter from '@/components/TypeWriter'
+import TypeWriter from "@/components/main/TypeWriter"
 
 
 export default function Home() {
 
 
   return (
-    <main className='flex-wrap'>
-      <section className='h-screen' >
-          <div className='flex items-center justify-center min-h-[50%]'>
+    <main>
+      <TypeWriter />
+      
+
+
+
+      {/* <section className='h-[51rem]'>
+          <div className='flex items-center justify-center min-h-[60%]'>
             <TypeWriter />
           </div>
       </section>
-      <section className='h-screen'>
-        <h1>About Section</h1>
+      <section className='h-[40rem]'>
+        <h1>EDUCATION</h1>
       </section>
-      <section className='h-screen'>
+      <section className='h-[40rem]'>
        <h1>Projects</h1> 
        
       
       </section>
-      <section className='h-screen'>Contact</section>
+      <section className='h-[40rem]'>Contact</section> */}
     </main>
   )
 }
