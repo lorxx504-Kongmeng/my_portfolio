@@ -1,6 +1,14 @@
-import React from 'react'
+'use client'
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
+
+
 
 const Projects = () => {
+  const pathname = usePathname();
   const projects = [
     {
       id: 1,
@@ -12,6 +20,9 @@ const Projects = () => {
       images: ["/projects/portfolio/portfolio_front.png", "/projects/portfolio/portfolio_back.png"]
     }
   ]
+
+
+
   return (
     <div className='h-screen bg-gray-800 text-white'>
       <div className='max-w-[1000px] m-auto md:grid gap-10'>
@@ -21,9 +32,15 @@ const Projects = () => {
               <div >
                 {projects.map((item) => {
                   return (
-                    <div> 
+                    <div className='mt-2'> 
                       <div >
-
+                        <h1>{item.title}</h1>
+                        <h1>{item?.website}</h1>
+                        <p>{item.description}</p>
+                        <div>
+                          <Link href={item.link}><h1 className='px-4 py-2 bg-blue-500 rounded-lg'>Github</h1></Link>
+                        </div>
+                        <Image src="/projects/portfolio/portfolio_front.png" width={600} height={600} />
                       </div>
                       
                       
