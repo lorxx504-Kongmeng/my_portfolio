@@ -8,7 +8,7 @@ const Experiences = () => {
         id: 1,
         title: "Associate Software Engineer",
         company: "Optum",
-        location: "remote",
+        location: "Remote",
         date:  "January 2023 - June 2023",
         description: "During my time at Optum, as a full stack software engineer, I had the opportunity to work on developing UI components and backend services for healthcare industry applications. For example, designing and implementing intuitive user interface components using Angular, ensuring a seamless and responsive user experience. These components might have included forms for data entry, interactive charts and graphs for data visualization, and reusable UI elements for consistent design across the application. As well as developing robust backend services using Spring Boot to handle data processing, business logic and integration. This involved designing and implementing RESTful APIs.",
         skills: ["Typescript", "Java","Angular", "Spring Boot", "Graphql", "NestJS", "Github", "Jenkins"]
@@ -34,14 +34,12 @@ const Experiences = () => {
   ];  
 
   return (
-    <div className="w-full h-[60rem] mt-2">
+    <div className="w-full h-full mt-2">
       <div className='max-w-[1000px] m-auto md:grid gap-10'>
           <div className="col-span-2 flex justify-between">
-            <div className='flex-wrap'>
-              <h1 className='uppercase text-6xl'>work experiences.</h1>
+            <div className='drop-shadow-2xl'>
+              <h1 className='uppercase text-6xl '>work experiences.</h1>
               <div>
-
-
               {timeLineElements.map((item,index) => {
                     return <>
                         <div className="flex justify-between flex-wrap transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 duration-500 cursor-pointer">
@@ -55,7 +53,7 @@ const Experiences = () => {
                             <p className="text-xl mt-1 mb-1">{item.company}</p>
                             <p className="text-base mt-1 mb-1">{item.location}</p>
                             <p className="font-light">{item.description}</p>
-                            <div className="mt-2 flex ">
+                            <div className="mt-2 flex mb-2">
                               {
                                 item.skills.map((skill) => {
                                   return <p className="bg-gray-600 rounded-lg px-2 py-1 mr-1 text-white">{skill}</p>
