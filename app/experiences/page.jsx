@@ -19,7 +19,7 @@ const Experiences = () => {
         company: "University of Minnesota, Twin Cities",
         location: "Minneapolis",
         date:  "January 2020 - November 2021",
-        description: "At this position, my primary responisbilty is to provide technical support and troubleshooting assistance to end-users. This includes diagnosing and resolving hardware and software issues, identifying network problems, and addressing any other technical difficulties encountered by users. I also responsible for installing, configuring, and upgrading computer hardware, software, and operating systems. They set up new computers, install required software applications, and ensure that all systems are properly configured and functional. All of the end-users are the university's faculty, staff, and students.",
+        description: "At this position, my primary responisbilty is to provide technical support and troubleshooting assistance to end-users. This includes diagnosing and resolving hardware and software issues, identifying network problems, and addressing any other technical difficulties encountered by users. I also responsible for installing, configuring, and upgrading computer hardware, software, and operating systems. I also set up new computers, install required software applications, and ensure that all systems are properly configured and functional. All of the end-users are the university's faculty, staff, and students.",
         skills: ["Software Applications", "Active Directory", "Operating Systems", "Hardware Knowledge", "Networking Basics"]
     },
     {
@@ -28,7 +28,7 @@ const Experiences = () => {
         company: "DongDok Kitchen",
         location: "Saint Paul",
         date:  "January 2020 - November 2022",
-        description: "At this position, my primary responisbilty is responsible for creating and updating menus that align with customer preferences, dietary requirements, and seasonal availability of ingredients. As well as Maintaining proper food safety and hygiene practices is crucial. The Food Manager ensures compliance with local health regulations, oversees proper food handling, storage, and preparation techniques, and conducts regular inspections to maintain cleanliness and sanitation standards.",
+        description: "At this position, my primary responisbilty is responsible for creating and updating menus that align with customer preferences, dietary requirements, and seasonal availability of ingredients. As well as Maintaining proper food safety and hygiene practices is crucial. I also ensures compliance with local health regulations, oversees proper food handling, storage, and preparation techniques, and conducts regular inspections to maintain cleanliness and sanitation standards.",
         skills: [ "Leadership and Management", "Problem-solving and Decision-making", "Continuous Learning"]
     }
   ];  
@@ -42,7 +42,7 @@ const Experiences = () => {
               <div>
               {timeLineElements.map((item,index) => {
                     return <>
-                        <div className="flex justify-between flex-wrap transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 duration-500 cursor-pointer">
+                        <div className="flex justify-between flex-wrap transition cursor-pointer">
                           <div className="mt-10">
                             <div className="flex justify-between">
                               <h1 className="text-2xl font-bold">{item.title}</h1>
@@ -56,15 +56,13 @@ const Experiences = () => {
                             <div className="mt-2 flex mb-2">
                               {
                                 item.skills.map((skill) => {
-                                  return <p className="bg-gray-600 rounded-lg px-2 py-1 mr-1 text-white">{skill}</p>
+                                  return <p className="bg-gray-600 rounded-lg px-2 py-1 mr-2 text-white">{skill}</p>
                                 })
                               }
                             </div>
                           </div>
                         </div>          
                     </>
-                    
-
                   })}
 
 

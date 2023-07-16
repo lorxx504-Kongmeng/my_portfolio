@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const TypeWriter = () => {
     const [firstNameTypeWriter] = useTypewriter({
-        words: ["Hi, my name is Kongmeng Lor."],
+        words: ["Kongmeng Lor"],
         loop: 1,
         typeSpeed: 50
     });
@@ -24,10 +24,10 @@ const TypeWriter = () => {
 
     return (
         
-        <div className='w-full h-[60rem] text-center'>
+        <div className='w-full h-[60rem] text-center xl:h-screen '>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
-                    <h1 className='text-6xl font-medium text-slate-700'>{firstNameTypeWriter}</h1>
+                    <h1 className='text-7xl font-medium text-slate-700'>{firstNameTypeWriter}</h1>
                     <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                         <h1 className='text-3xl m-1 text-slate-650'>{iAmTypeWriter}</h1>
                         <p className='text-3xl m-1 text-slate-650'>{position}</p>

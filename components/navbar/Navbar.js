@@ -14,7 +14,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="m-16">
+        // <nav className="p-10 fixed w-full">
+        <nav className="p-10">
             <div className="flex justify-between shadow-xl">
                 <span>
                     <Link href="/"><h1 className="text-xl hover:font-bold">developedbyKongmengLor</h1></Link>
