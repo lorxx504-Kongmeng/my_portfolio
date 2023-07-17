@@ -34,15 +34,15 @@ const Experiences = () => {
   ];  
 
   return (
-    <div className="w-full h-full mt-2">
-      <div className='max-w-[1000px] m-auto md:grid gap-10'>
+    <div className="w-full h-max mt-2">
+      <div className='max-w-[1200px] m-auto md:grid gap-10'>
           <div className="col-span-2 flex justify-between">
             <div className='drop-shadow-2xl'>
-              <h1 className='uppercase text-6xl '>work experiences.</h1>
+              <h1 className='uppercase text-6xl font-extrabold'>work experiences.</h1>
               <div>
               {timeLineElements.map((item,index) => {
                     return <>
-                        <div className="flex justify-between flex-wrap transition cursor-pointer">
+                        <div className="flex justify-between flex-wrap transition">
                           <div className="mt-10">
                             <div className="flex justify-between">
                               <h1 className="text-2xl font-bold">{item.title}</h1>
@@ -56,7 +56,7 @@ const Experiences = () => {
                             <div className="mt-2 flex mb-2">
                               {
                                 item.skills.map((skill) => {
-                                  return <p className="bg-gray-600 rounded-lg px-2 py-1 mr-2 text-white">{skill}</p>
+                                  return <p className="bg-gray-600 rounded-lg px-2 py-1 mr-2 text-white  cursor-auto">{skill}</p>
                                 })
                               }
                             </div>
@@ -64,16 +64,8 @@ const Experiences = () => {
                         </div>          
                     </>
                   })}
-
-
-
-
+              </div>
             </div>
-
-            </div>
-
-            
-
           </div>
       </div>
     </div>

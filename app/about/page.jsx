@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="w-full p-2 flex items-center py-20 bg-gray-800 text-white mt-12">
 
-        <div className="max-w-[1000px] m-auto md:grid grid-cols-2 gap-10 ">
+        <div className="max-w-[1200px] m-auto md:grid grid-cols-2 gap-10 ">
           <div className="col-span-2 flex justify-between">
             <div className='flex-wrap'>
               <h1 className="text-xl">About</h1>
