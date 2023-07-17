@@ -1,6 +1,7 @@
 "use client"
 import {useTypewriter } from 'react-simple-typewriter'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const TypeWriter = () => {
@@ -26,7 +27,11 @@ const TypeWriter = () => {
         
         <div className='w-full h-[60rem] text-center xl:h-screen '>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+
                 <div>
+                {/* <div className='flex justify-center items-center'>
+                  <Image src="/profile/headshot3.png" width={200} height={200} className='rounded-full'></Image>
+                </div> */}
                     <h1 className='text-7xl font-medium text-slate-700'>{firstNameTypeWriter}</h1>
                     <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                         <h1 className='text-3xl m-1 text-slate-650'>{iAmTypeWriter}</h1>

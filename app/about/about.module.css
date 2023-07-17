@@ -1,0 +1,25 @@
+/* styles.module.css */
+@media (max-width: 767px) {
+    /* Styles for small screens */
+    .text-6xl {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for medium screens */
+    .text-6xl {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Styles for large screens */
+    .text-6xl {
+      font-size: 6rem;
+    }
+  }
+  
+
+  /* Add similar media queries for other elements as per your requirements */
+  

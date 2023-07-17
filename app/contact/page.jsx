@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Contact = () => {
   return (
@@ -11,7 +12,8 @@ const Contact = () => {
       </div>
       <div className='flex justify-center items-center text-center'>
         <div>
-          <h1 className='font-bold'>kongmenglor122@gmail.com</h1>
+          <h1 className='font-bold text-xl'>kongmenglor122@gmail.com</h1>
+          <Link href="/my-portfolio/resume.pdf">Resume</Link>
           
         </div>
 
